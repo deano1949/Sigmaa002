@@ -1,0 +1,16 @@
+Monthly task:
+
+1.Trade_activity
+Follow "guide.txt" to complete trade_activity
+location: C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\7. Operations\2. Trade_activity
+
+Quarterly task:
+
+2. Trading cost and price slippage
+Update "Spread_Comm_analysis.xlsx" to update trading cost and price slippage assumptions in simulation
+location: C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\7. Operations\3. OP_Spread\livetraded_spread
+
+3.Ranked_effect: (check how close live-traded names matches what in simulaiton)
+
+location: C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\4. Alphas (new)\14.bog_sog\2.Production\Ranked_effect
+
