@@ -1,9 +1,12 @@
-function [bogret,sogret,bog_performance,sog_performance,bsog_table]=Prod_bogsog(location,write,stckselectmode,spread_mode)
+function [bogret,sogret,bog_performance,sog_performance,bsog_table]=Prod_bogsog(location,write)
 %Input: location = 'Coutts'
 %                  'Home'
 %       write = 'Y','N'
-%       stckselectionmode = 'ranked' or 'random'
+%       stckselectmode = 'ranked' or 'random'
 %       spread_mode = '' or 'fix'
+
+stckselectmode = 'random';
+spread_mode = 'fix';
 
 % clc;clear;
 if strcmp(location,'Home')
@@ -24,7 +27,7 @@ tradeuniverse='currentUniverse';
 % tradeuniverse='';
 load(strcat(path, 'NUV.mat'));
 if strcmp(tradeuniverse,'currentUniverse')
-    currentUniverse=readtable(strcat(tradeuniversepath,'ScreenTradingUniverse\2017 Q4\Trading_universe_2017_10_30.csv'));
+    currentUniverse=readtable(strcat(tradeuniversepath,'ScreenTradingUniverse\2018 Q1\Trading_universe_2018_04_29.csv'));
     sym=currentUniverse.Symbol; 
     [list,~]=ismember(name,sym); %filter names in the current trading universe
 else
